@@ -20,11 +20,19 @@
   };
 
   home.packages = with pkgs; [
+    wofi
     ripgrep
     fzf
     fastfetch
     lazygit
     gum
+    ags
+    neovide
+    zathura
+    mpv
+    gcc
+    firefox
+    bat
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
