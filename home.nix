@@ -13,6 +13,12 @@
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
+  programs.git = {
+    userName = "sudonym_";
+    userEmail = "bailorjacrey@gmail.com";
+    extraConfig.init.defaultBranch = "main";
+  };
+
   home.packages = with pkgs; [
     ripgrep
     fzf
