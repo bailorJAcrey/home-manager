@@ -19,6 +19,14 @@
     extraConfig.init.defaultBranch = "main";
   };
 
+  gtk = {
+    enable = true;
+    theme = {
+      package = pkgs.gruvbox-gtk-theme;
+      name = "Gruvbox-Dark";
+    };
+  };
+
   home.packages = with pkgs; [
     wofi
     ripgrep
