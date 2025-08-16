@@ -27,6 +27,22 @@
     };
   };
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    name = "WinSur-dark-cursors";
+    size = 24;
+    package = pkgs.runCommand "moveUp" {} ''
+      mkdir -p $out/share/icons
+      ln -s ${pkgs.fetchgit {
+        url = "https://github.com/yeyushengfan258/WinSur-dark-cursors.git";
+        leaveDotGit = false;
+        sparseCheckout = [ "dist/" ];
+        hash = "sha256-bCpcvtZYng0bIEN2IiJuP0QoCDEN8XO9y+haAYoRMhc=";
+      }}/dist $out/share/icons/WinSur-dark-cursors
+    '';
+  };
+
   home.packages = with pkgs; [
     wofi
     ripgrep
