@@ -64,7 +64,21 @@
     firefox
     bat
     todoist
+    swww
+    jq
     obsidian
+    nix-search-cli
+    brightnessctl
+    grim
+    slurp
+    wf-recorder
+    dunst
+    libnotify
+    luajit
+    lua-language-server
+    feh
+    nautilus
+    blender
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
