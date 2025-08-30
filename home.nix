@@ -57,7 +57,6 @@
     lazygit
     gum
     ags
-    neovide
     zathura
     mpv
     gcc
