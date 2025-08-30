@@ -27,6 +27,10 @@
       package = pkgs.gruvbox-gtk-theme;
       name = "Gruvbox-Dark";
     };
+    iconTheme = {
+      name = "Gruvbox-Plus-Dark";
+      package = pkgs.gruvbox-plus-icons;
+    };
   };
 
   home.pointerCursor = {
