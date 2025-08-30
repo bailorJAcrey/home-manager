@@ -13,6 +13,8 @@
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
+  nixpkgs.config.allowUnfree = true;
+
   programs.git = {
     userName = "sudonym_";
     userEmail = "bailorjacrey@gmail.com";
@@ -58,6 +60,7 @@
     firefox
     bat
     todoist
+    obsidian
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
